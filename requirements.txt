@@ -1,0 +1,35 @@
+ACMer's Toolkit - 依赖说明
+==========================
+
+运行环境要求
+------------
+- JDK 11 或更高版本
+- Eclipse 2019-09 或更高版本（推荐配合 WindowBuilder 插件）
+
+依赖库（放在 lib/ 目录下）
+--------------------------
+1. SQLite JDBC 驱动
+   文件名：sqlite-jdbc-3.46.1.3.jar
+   下载地址：https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc/3.46.1.3
+
+2. JLayer MP3 解码库（可选，用于 MP3 播放）
+   文件名：jlayer-1.0.1.jar
+   下载地址：https://mvnrepository.com/artifact/javazoom/jlayer/1.0.1
+
+背景音乐文件（放在 music/ 目录下，可选）
+----------------------------------------
+支持 WAV 格式音频文件，文件名随意。
+示例：gone.wav, rain.wav, ambient.wav
+
+数据库
+------
+首次运行自动创建 acm_toolkit.db（SQLite），无需手动建库。
+
+导入方式
+--------
+1. 打开 Eclipse
+2. File → Import → General → Existing Projects into Workspace
+3. 选择本项目目录
+4. 右键项目 → Build Path → Configure Build Path → Libraries
+   确认 lib/ 下的 jar 文件已添加
+5. 右键 Main.java → Run As → Java Application
