@@ -1,0 +1,18 @@
+# 编译输出
+bin/
+
+# Eclipse 配置
+.settings/
+.classpath
+.project
+
+# 数据库文件
+*.db
+
+# 临时文件
+data/temp/
+*.class
+*.exe
+
+# 测试文件
+TestMp3.*
