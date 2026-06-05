@@ -14,5 +14,11 @@ data/temp/
 *.class
 *.exe
 
+# 依赖库（需自行下载）
+lib/
+
+# 背景音乐（需自行准备）
+music/
+
 # 测试文件
 TestMp3.*
